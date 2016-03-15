@@ -17,8 +17,8 @@ require 'capistrano/deploy'
 #
 
 require 'capistrano/rvm'
-set: rvm_type, :user
-set: rvm_ruby, '2.3.0p0'
+set :rvm_type, :user
+set :rvm_ruby, '2.3.0p0'
 
 require 'capistrano/bundler'
 require 'capistrano/rails'
