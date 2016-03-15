@@ -40,7 +40,7 @@ group :development do
   gem 'capistrano-bundler', '~> 1.1.4'
 end
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+ gem 'bcrypt'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
