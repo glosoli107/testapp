@@ -33,6 +33,8 @@ gem 'bcrypt'
 
 gem 'devise'
 
+gem 'capistrano-passenger'
+
 group :development do
   gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-rails', '~> 1.1.6'
