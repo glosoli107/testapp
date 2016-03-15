@@ -33,6 +33,7 @@ gem 'devise'
 
 gem 'capistrano-passenger'
 
+gem 'sshkit'
 
 group :development do
   gem 'capistrano', '~> 3.4.0'
