@@ -189,6 +189,7 @@ DEPENDENCIES
   bcrypt
   byebug
   capistrano (~> 3.4.0)
+  capistrano-bundler (~> 1.1.2)
   capistrano-rails (~> 1.1.6)
   capistrano-rvm!
   coffee-rails (~> 4.1.0)
