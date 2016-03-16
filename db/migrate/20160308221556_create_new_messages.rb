@@ -7,7 +7,5 @@ class CreateNewMessages < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    create_table :admins do |t|
-    end
   end
 end
