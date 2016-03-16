@@ -29,11 +29,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'figaro'
 
-gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5'
-
 gem 'devise'
 
-gem 'capistrano-passenger'
 
 gem 'sshkit'
 
@@ -42,6 +39,7 @@ group :development do
   gem 'capistrano-rails', '~> 1.1.6'
   gem 'capistrano-rvm'
   gem 'capistrano-bundler', '~> 1.1.4'
+  gem 'capistrano-passenger'
 end
 # Use ActiveModel has_secure_password
 
