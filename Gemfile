@@ -29,6 +29,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'figaro'
 
+gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5'
+
 gem 'devise'
 
 gem 'capistrano-passenger'
