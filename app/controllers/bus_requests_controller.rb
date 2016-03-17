@@ -30,11 +30,13 @@ class BusRequestsController < ApplicationController
 
     respond_to do |format|
       if @bus_request.save
+        format.mobile { redirect_to "/wedding/contact", notice: 'Your request has been submitted. We will email you a confirmation before the wedding. Thank you!' }
         format.html { redirect_to "/wedding/contact", notice: 'Your request has been submitted. We will email you a confirmation before the wedding. Thank you!' }
         format.json { render :show, status: :created, location: @bus_request }
       else
+        format.mobile { redirect_to "/wedding/contact", alert: "You must enter your email address and one or more names before submitting the request." }
         format.html { redirect_to "/wedding/contact", alert: "You must enter your email address and one or more names before submitting the request." }
-        format.json { render json: @bus_request.errors, status: :unprocessable_entity }
+        format.json { render json: @bus_request.errors, status: :unprocessable_entity
       end
     end
   end

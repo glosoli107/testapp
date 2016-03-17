@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag "mobile" if mobile_device? %>
 <%= stylesheet_link_tag    "index", media: "screen" %>
 <div class="overlay-navigation">
   <nav role="navigation">
@@ -36,3 +37,10 @@
     <span class="bar-bottom"></span>
   </div>
 </section>
+<p>
+  <% if mobile_device? %>
+    <%= link_to "Full Site", :mobile => 0 %>
+  <% else %>
+    <%= link_to "Mobile Site", :mobile => 1 %>
+  <% end %>
+</p>

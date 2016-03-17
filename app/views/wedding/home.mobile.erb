@@ -1,0 +1,12 @@
+<%= stylesheet_link_tag "mobile" if mobile_device? %>
+<nav class="mobile-menu">
+<label for="show-menu" class="show-menu"><span>Menu</span><div class="lines"></div></label>
+	<input type="checkbox" id="show-menu">
+		<ul id="menu">
+		<li><a href="/wedding/wedding">Wedding</a></li>
+		<li><a href="/wedding/hotels">Hotels</a></li>
+		<li><a href="/wedding/registry">Registry</a></li>
+		<li><a href="/wedding/marryoke">Marryoke</a></li>
+		<li><a href="/wedding/contact">Contact</a></li>
+	</ul>
+</nav>

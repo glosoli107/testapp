@@ -32,9 +32,11 @@ class NewMessagesController < ApplicationController
         @user_email = @new_message.user_email
         @user_message = @new_message.user_message
         SiteMailer.new_message(@user_name, @user_email, @user_message).deliver_now
+        format.mobile { redirect_to "/wedding/contact", notice: 'Your message has been sent. Thank you!' }
         format.html { redirect_to "/wedding/contact", notice: 'Your message has been sent. Thank you!' }
         format.json { render :show, status: :created, location: @new_message }
       else
+        format.mobile { redirect_to "/wedding/contact", alert: "You must enter your name, email address, and message before sending the message." }
         format.html { redirect_to "/wedding/contact", alert: "You must enter your name, email address, and message before sending the message." }
         format.json { render json: @new_message.errors, status: :unprocessable_entity }
       end

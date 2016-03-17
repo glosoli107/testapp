@@ -1,3 +1,5 @@
+//credit for the inspiration from Mirko Zoric's Fullscreen flexbox overlay naviagation: http://codepen.io/fluxus/pen/gPWxXJ
+
   $(document).ready(function() {
     $('.open-overlay').click(function() {
       var overlay_navigation = $('.overlay-navigation'),

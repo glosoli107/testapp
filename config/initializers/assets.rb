@@ -4,6 +4,8 @@
 Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( contact.css )
 Rails.application.config.assets.precompile += %w( index.css )
+Rails.application.config.assets.precompile += %w( mobile.css )
+Rails.application.config.assets.precompile += %w( mobile_site.css )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 
